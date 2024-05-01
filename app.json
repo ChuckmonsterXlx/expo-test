@@ -25,6 +25,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "4358d465-ca27-48e4-8a80-e995106bb4d6"
+      }
+    },
+    "owner": "chuckmonster"
   }
 }
