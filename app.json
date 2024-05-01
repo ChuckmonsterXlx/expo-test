@@ -31,7 +31,7 @@
     },
     "owner": "chuckmonster",
     "runtimeVersion": {
-      "policy": "1.0.0"
+      "policy": "appVersion"
     },
     "updates": {
       "url": "https://u.expo.dev/4358d465-ca27-48e4-8a80-e995106bb4d6"
