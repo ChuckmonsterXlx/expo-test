@@ -32,7 +32,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text>Open up App.tsx to start working on your app!</Text>
-      <Text>Update</Text>
+      <Text>Update 2</Text>
       <StatusBar style="auto" />
     </View>
   );
