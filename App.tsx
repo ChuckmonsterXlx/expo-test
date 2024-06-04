@@ -2,6 +2,7 @@ import * as Updates from "expo-updates";
 import { StatusBar } from "expo-status-bar";
 import { Alert, StyleSheet, Text, View } from "react-native";
 import { useEffect } from "react";
+import Constants from "expo-constants";
 
 export default function App() {
   const onFetchUpdateAsync = async () => {
@@ -31,9 +32,20 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <Text>Update 2</Text>
       <StatusBar style="auto" />
+      <Text>Open up App.tsx to start working on your app!</Text>
+      <Text style={{ marginBottom: 5 }}>Update 2</Text>
+      <Text style={{ marginBottom: 5 }}>
+        process.env.NODE_ENV: {process.env.NODE_ENV}
+      </Text>
+      <Text style={{ marginBottom: 5 }}>
+        Constants.expoConfig?.extra?.expoPublicApiURL:
+        {Constants.expoConfig?.extra?.expoPublicApiURL}
+      </Text>
+      <Text>
+        Constants.expoConfig?.extra?.expoPublicApiURL:
+        {Constants.expoConfig?.extra?.expoPublicNewEnv}
+      </Text>
     </View>
   );
 }
